@@ -1,0 +1,34 @@
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnLogin{
+    padding: 5px 15px;
+    border-radius: 999px;
+    border: 1px solid white;
+    display: flex;
+    gap: 10px;
+}
+
+.containerLogin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    @apply text-primary text-4xl font-bold;
+}
+
+.p {
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}

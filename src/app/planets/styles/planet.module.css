@@ -1,0 +1,51 @@
+.main {
+    padding: 16px 32px;
+    align-items: center;
+}
+
+.list {
+    @apply grid grid-cols-5;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.pagination {
+    display: grid;
+    width: 100%;
+    place-content: center;
+    margin-top: 40px;
+}
+
+.pagination div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.pagination button {
+    padding: 5px 20px;
+    @apply bg-primary;
+    color: white;
+    border-radius: 999px;
+}
+
+@media only screen and (max-width: 640px) {
+    .list {
+        @apply grid-cols-2;
+    }
+    .main {
+        padding: 5px;
+        align-items: center;
+    }
+    .title {
+        margin-top: 20px;
+    }
+}

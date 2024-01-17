@@ -1,0 +1,87 @@
+.main {
+    padding: 22px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    @apply text-primary
+}
+
+.login {
+    font-size: 16px;
+    font-weight: 600;
+    @apply text-primary border border-secondary rounded-full;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.wishlist {
+    padding: 4px 12px;
+    border-radius: 15px;
+    @apply bg-primary;
+    color: white;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.containerLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img {
+    display: block;
+    width: 30px;
+    border-radius: 999px;
+}
+
+.user span {
+    display: block;
+}
+
+@keyframes rocket {
+    0% {
+        transform: translateX(0) translatey(0);
+    }
+
+    33% {
+        transform: translateX(15%);
+    }
+
+    66% {
+        transform: translateX(-15%) translateY(15%);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+
+}
+.rocket {
+    animation: rocket infinite 2s ease-in-out;
+}
+@media only screen and (max-width: 640px) {
+        .main {
+            padding: 20px 15px;
+        }
+    }

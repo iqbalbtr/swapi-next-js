@@ -1,0 +1,76 @@
+.main {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    padding-top: 25px;
+}
+
+.wishlist {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.list {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.table {
+    padding: 3px;
+    width: 70%;
+    text-align: left
+}
+
+.table tr:nth-child(even) {
+    border-radius: 15px;
+    @apply bg-primary/30;
+}
+
+.table tr,
+.table tr td,
+.table tr th {
+    border-bottom: 1px solid #dddddd;
+    padding: 8px 0;
+}
+
+.kosong {
+    margin: 20px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.page {
+    display: flex;
+    gap: 5px;
+}
+
+.btnPagination{
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+}
+
+@media only screen and (max-width: 640px) {
+    .list {
+        padding: 5px;
+        font-size: 13px;
+    }
+    .table {
+        width: 100%;
+    }
+}
